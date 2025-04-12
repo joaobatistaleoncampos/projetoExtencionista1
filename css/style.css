@@ -1,0 +1,217 @@
+ /*  LIMPAR FORMATAÇÕES*/
+ *{
+
+    margin: 0;
+    padding: 0;
+     }
+     
+    body{
+    margin:10px; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    background-color: rgba(185, 191, 152, 0.267);
+    }
+    h1{
+    color: black;
+    }
+    p{
+     text-indent: 10px;
+    font-size: 15px;
+    }
+    h2{
+    
+      text-align: center;
+    }
+    
+    #header{
+          text-align: center;
+          background-color:rgb(45, 234, 130);
+          color: rgb(13, 24, 16); /* letra do titulo*/
+          font-family:'Courier New', Courier, monospace;
+          font-size: 30px;
+          padding: 30px;
+          /*padding: 15px;*/
+         /* padding-left: 150px;*/
+     
+    }
+      #menu :hover{
+    
+    background-color: white;
+    
+    }
+     #logo{
+        
+        padding:3px;
+      
+    
+     }
+     a #menu{
+       font-size: 0px;
+    }
+    
+    
+    
+     #menu button  {
+      width: 300px; 
+      /*width: 1470px;*/
+      background:rgb(45, 234, 130);
+      margin:12px;
+      margin-left: 140px;
+      border-radius: 10px;
+    
+      }
+       #menu button  a :hover{
+        background: rgb(234, 158, 45);
+      background: white;
+      }
+    #posts{
+      width: 660px;
+      float:left;
+    
+      }
+      #content{
+        width: 920px;
+        margin: 0 auto;
+        padding: 0px;
+        margin-top: 0px;
+        padding-top: 30px;
+    
+        }
+     header a:link , header a:visited {
+    
+    color: #ffff;
+    padding: 8px 12px;
+     }
+    
+     #header a:hover{
+      color: rgb(234, 158, 45);
+      background:#ffff;
+      text-decoration:none;
+    }
+    
+    
+    
+    
+    
+    
+    
+    .white{
+    color:white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
+    
+    }
+    
+      
+     .imagem{
+      height: 412px;
+      width: 600px;
+      margin-bottom: 90px;
+      /*margin: auto; 
+      display: block;*/
+      
+    }
+    
+    
+    .post{
+    margin-top: 0px;
+    padding: 25px;
+    margin-bottom:50px ;
+    background: #ffff;
+    text-align: justify;
+    font-size: 10px;
+    
+    }
+    
+    .data-post{
+    
+    font-size:13px ;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: block;
+    }
+    /*.imag-post{
+    width: 360px;
+    
+    
+    }*/
+    #reght-side{
+    width: 240px;
+    float: right;
+    margin: 0px;
+    
+    }
+    #content-rigth{
+    
+    background: #ffff;
+    
+    padding-left: 10px;
+    margin-bottom: 20px
+    
+    }.post-rigth0{
+      font-size: 13px;
+      padding: 10px;
+      border-bottom: 1px dotted #cccc;
+      margin: 2px;
+      
+      }
+    
+    .post-rigth1{
+    font-size: 13px;
+    padding: 10px;
+    border-bottom: 1px dotted #cccc;
+    margin: 2px;
+    
+    }
+    .post-rigth2{
+      font-size: 15px;
+      padding: 5px;
+      border-bottom: 1px dotted #cccc;
+      margin: 2px;
+      margin-top: 10px;
+      margin: auto;
+      display: block;
+    }
+    
+     .content-rigth{
+    
+      text-align: center;
+      background: #ffff;
+      padding: 10px;
+      padding-left: 10px;
+      margin-bottom: 30px
+    
+    
+     }
+    a{
+    text-decoration: none;
+    
+    
+    }
+    a:link,a:visited{
+    
+    color: black;
+    font-size:15px ;
+    font-family: 'Times New Roman', Times, serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    .cat{
+     background-color: aqua;
+    
+    }
+    
+    
+    #footer{
+       width: 890px;
+      clear:both;
+      text-align: center;
+      padding: 15px;
+      background: rgb(45, 234, 130);
+      margin-left: 4px;
+    
+      }
+      
+    
+    
+    
+    
+    
+    
