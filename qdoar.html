@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,35 +8,59 @@
     <a href="qdoar.html"></a>
     <link rel="stylesheet" href="css/qdoar.css">
 </head>
+
 <body>
     <header>
         <h1>Quero doar</h1>
         <button> <a href="index.html">Menu principal</a></button>
     </header>
     <div class="itens">
-       
-    <nav>
-        <p>  Preencha o campo e alguém vai entrar em contato: </p>
-       Nome/Contato: <input type="text" id="tarefa" placeholder="Insira nome/Contato">
-        <br>
-      <!-- Numeros para contatos: <input type="number">-->
-    </nav>
-    <main>
-        
+
+        <nav>
+
+            <form action="" class="form">
+
+
+                <p> Preencha o campo e alguém vai entrar em contato: </p>
+                Nome completo: <input type="text" class="nomeCompleto" placeholder="Insira nome">
+                <br>
+                Numeros para contatos: <input type="tel" class="numeroTel">
+
+
+                <div class="resultado"></div>
+                <button>Enviar</button>
+
+
+
+            </form>
+
+        </nav>
+        <main>
+
             <p> <input type="checkbox">Roupas</p>
             <p><input type="checkbox">Calçados</p>
             <p><input type="checkbox">Jogo de Cama</p>
             <p> <input type="checkbox">Outros</p>
-       
-            <button type="button" onclick="saveDataToLocalStorage()"> <a href="index.html">salvar</a></button>
-            <button  type="button" onclick="clearLocalStorage()"> <a href="index.html">carregar</a></button>
-            <button  type="button" onclick="showLocalStorageData()
-            ">Exibir<a href="index.html">carregar</a></button>
-        </div>
 
-       
+
+
+
+            <button type="button" onclick="saveDataToLocalStorage()"> <a href="index.html" class="">salvar</a></button>
+            <!--             
+            <button  type="button" onclick="clearLocalStorage()"> <a href="index.html">carregar</a></button>
+            
+            <button  type="button" onclick="showLocalStorageData()
+            ">Exibir<a href="index.html">carregar</a></button> -->
+    </div>
+
+
 
     </main>
+
+
+
+
     <script src="script.js"></script>
 </body>
+
 </html>
