@@ -9,17 +9,30 @@
 <body>
 <header>
     <h1>Doação para terceiros</h1>
-    <button> <a href="index.html">Menu principal</a></button>
+   
 
 </header>
 <div class="itens">
    
 <nav>
+     <button> <a href="index.html">Menu principal</a></button>
+ <form action="" class="form">
 
-    <p>  Preencha o campo e alguém vai entrar em contato: </p>
-   Nome: <input type="text">
-    <br>
-   Numeros para contatos: <input type="tel">
+<strong>
+    
+                    <p> Preencha o campo e alguém vai entrar em contato: </p>
+</strong>
+                Nome completo: <input type="text" class="nomeCompleto" placeholder="Insira nome">
+                <br>
+                Número para contato: <input type="tel" class="numeroTel">
+
+
+                <div class="resultado"></div>
+                <button>Enviar</button>
+
+
+
+            </form>
 
 </nav>
 <main>
@@ -35,5 +48,6 @@
 
 
 </main>
+<script src="script.js"></script>
 </body>
 </html>

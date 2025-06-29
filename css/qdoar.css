@@ -4,6 +4,7 @@ header{
   
 button{
     margin: 10px;
+    
     }
 
 a{
@@ -14,6 +15,9 @@ p{
     text-align: center;
     margin-top: 70px;
     
+}
+form p{
+    font-size: 20px;
 }
 
 nav {
@@ -33,7 +37,7 @@ input{
 }
 
 main p{
-    margin: 30px;
+    margin: 15px;
     border: solid 1px;
     border-radius: 5px;
 }
