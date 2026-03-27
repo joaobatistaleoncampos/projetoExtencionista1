@@ -1,33 +1,56 @@
-function meuEscopo() {
-    const form = document.querySelector('.form');
-    const resultado = document.querySelector('.resultado');
+// IMPORTS DO FIREBASE
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
-    const pessoas = [];
-    function recebeEventoForm(evento) {
-        evento.preventDefault();
+// CONFIG DO FIREBASE (COLE A SUA AQUI)
+const firebaseConfig = {
+  apiKey: "AIzaSyCE8AzqEDisC3KVztITvzcGk-LRnsqGVXQ",
+  authDomain: "site-doacao.firebaseapp.com",
+  databaseURL: "https://site-doacao-default-rtdb.firebaseio.com",
+  projectId: "site-doacao",
+  storageBucket: "site-doacao.firebasestorage.app",
+  messagingSenderId: "999078266795",
+  appId: "1:999078266795:web:f21d4538e8f0a6c82234ee",
+  measurementId: "G-H6E4E7JTPD"
+};
 
-        const nomeCompleto = form.querySelector('.nomeCompleto');
-        const numeroTel = form.querySelector('.numeroTel');
+// INICIA FIREBASE
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
 
+// PEGAR ELEMENTOS
+const form = document.getElementById("formDoacao");
 
-        pessoas.push({
-            nomeCompleto: nomeCompleto.value,
-            numeroTel: numeroTel.value
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
 
+  // CAMPOS
+  const nome = document.getElementById("nome").value;
+  const contato = document.getElementById("contato").value;
 
-        });
+  const roupas = document.getElementById("roupas").checked;
+  const calcados = document.getElementById("calcados").checked;
+  const cama = document.getElementById("cama").checked;
+  const outros = document.getElementById("outros").checked;
 
-        console.log(pessoas);
+  try {
+    await addDoc(collection(db, "doacoes"), {
+      nome: nome,
+      contato: contato,
+      itens: {
+        roupas: roupas,
+        calcados: calcados,
+        cama: cama,
+        outros: outros
+      },
+      data: new Date()
+    });
 
-        resultado.innerHTML += `<p>  Seu nome é:${nomeCompleto.value}<br> Seu contato é : ${numeroTel.value}<br> `;
+    alert("Doação registrada com sucesso!");
+    form.reset();
 
-        resultado.innerHTML += `<p>Em breve alguém vai entrar em contato,Obrigado!!</p>`
-
-    }
-
-    form.addEventListener('submit', recebeEventoForm);
-}
-
-meuEscopo();
-
-
+  } catch (erro) {
+    console.error("Erro ao salvar:", erro);
+    alert("Erro ao salvar!");
+  }
+});
