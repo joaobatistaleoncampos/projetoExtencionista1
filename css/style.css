@@ -56,7 +56,15 @@
    font-size: 0px;
  }
 
+ #menu {
+   display: flex;
+   justify-content: center;
+   /* centraliza os botões */
+   gap: 0;
+   /* espaço entre eles */
 
+
+ }
 
  #menu button {
    width: 300px;
@@ -64,7 +72,7 @@
    /*width: 1470px;*/
    background: rgb(45, 234, 130);
    margin: 12px;
-   margin-left: 250px;
+   margin-left: 20px;
    border-radius: 10px;
 
  }
@@ -102,18 +110,11 @@
    text-decoration: none;
  }
 
-
-
-
-
-
-
  .white {
    color: white;
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
 
  }
-
 
  .imagem {
    height: 412px;
@@ -123,7 +124,6 @@
       display: block;*/
 
  }
-
 
  .post {
    margin-top: 0px;

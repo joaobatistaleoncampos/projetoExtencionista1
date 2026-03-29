@@ -27,7 +27,6 @@ form.addEventListener("submit", async (e) => {
   // CAMPOS
   const nome = document.getElementById("nome").value;
   const contato = document.getElementById("contato").value;
-
   const roupas = document.getElementById("roupas").checked;
   const calcados = document.getElementById("calcados").checked;
   const cama = document.getElementById("cama").checked;

@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quero doar</title>
-  <link rel="stylesheet" href="css/qdoar.css">
+  <link rel="stylesheet" href="css/qDoar.css">
 </head>
+
 <body>
   <header>
     <h1>Quero doar</h1>
   </header>
 
-  <div class="itens">
+  <div class="container">
     <nav>
       <a href="index.html">Menu principal</a>
     </nav>
@@ -21,12 +23,12 @@
       <input type="text" id="nome" placeholder="Insira nome">
       <br>
       <label>Número para contato:</label>
-      <input type="text" id="contato">
+      <input type="text" id="contato" placeholder="Contato">
       <br>
-      <label><input type="checkbox" id="roupas"> Roupas</label>
-      <label><input type="checkbox" id="calcados"> Calçados</label>
-      <label><input type="checkbox" id="cama"> Jogo de Cama</label>
-      <label><input type="checkbox" id="outros"> Outros</label>
+      <label>Roupas<input type="checkbox" id="roupas"> </label>
+      <label> Calçados<input type="checkbox" id="calcados"></label>
+      <label>Cobertor<input type="checkbox" id="cama"> </label>
+      <label>Outros<input type="checkbox" id="outros"></label>
       <br>
       <button type="submit">Salvar</button>
     </form>
@@ -35,4 +37,5 @@
   <!-- Apenas um script chamando o JS -->
   <script type="module" src="script.js" defer></script>
 </body>
+
 </html>
